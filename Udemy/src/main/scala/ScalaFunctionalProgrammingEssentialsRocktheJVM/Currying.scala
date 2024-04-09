@@ -1,0 +1,5 @@
+package ScalaFunctionalProgrammingEssentialsRocktheJVM
+
+object Currying {
+
+}
