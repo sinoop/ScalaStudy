@@ -9,3 +9,7 @@
 /Coursera/coursera-scala/project/project/target/
 /.idea/
 /Udemy/ScalaFunctionalProgrammingEssentialsRocktheJVM/target/
+/*/target/*
+/*/project/target/*
+/*/.idea/*
+/*/.bsp/*
