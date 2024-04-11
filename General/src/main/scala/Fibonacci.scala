@@ -1,3 +1,4 @@
+import scala.annotation.tailrec
 import scala.io.StdIn
 
 object Fibonacci extends App {
@@ -12,16 +13,18 @@ object Fibonacci extends App {
     }
   }
 
+  // Memoized Solution
   private def generateFibonacci(n: Long): Long = {
-    def fibonacciHelper(n: Long, a: Long, b: Long): Long = {
-      if (n <= 2) b
-      else fibonacciHelper(n - 1, b, a + b)
+    @tailrec
+    def fibonacciHelper(number: Long, currentTerm: Long, nextTerm: Long): Long = {
+      if (number <= 2) nextTerm
+      else fibonacciHelper(number - 1, nextTerm, currentTerm + nextTerm)
     }
 
     fibonacciHelper(n, 1, 1)
   }
 
-
+awA
   println(s"${input}th fibinocci is ${generateFibonacci(input)}")
 
 }
