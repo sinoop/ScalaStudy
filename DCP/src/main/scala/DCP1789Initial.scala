@@ -1,5 +1,5 @@
 
-class BroadcastRangeInitialSolution extends Solution[BroadcastRangeInput] {
+class DCP1789Initial extends Solution[BroadcastRangeInput] {
   def getInputs: BroadcastRangeInput = {
     println("Enter the list of listeners (comma-separated):")
     val listeners = scala.io.StdIn.readLine().replace(" ", "").split(",").map(_.toInt).toSeq
@@ -28,9 +28,9 @@ class BroadcastRangeInitialSolution extends Solution[BroadcastRangeInput] {
 }
 
 
-object BroadcastRangeInitialSolution extends App {
+object DCP1789Initial extends App {
   // Entry point for the application
-  val solution = new BroadcastRangeInitialSolution
+  val solution = new DCP1789Initial
   solution.execute() // Execute the solution
 }
 

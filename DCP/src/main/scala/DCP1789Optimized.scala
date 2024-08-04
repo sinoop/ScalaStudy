@@ -2,7 +2,7 @@ case class BroadcastRangeInput(listeners: Seq[Int], towers: Seq[Int])
 
 
 // Concrete implementation of the solution for calculating minimum broadcast range
-class BroadcastRangeSolution extends Solution[BroadcastRangeInput] {
+class DCP1789Optimized extends Solution[BroadcastRangeInput] {
   // Method to get inputs from the user
   def getInputs: BroadcastRangeInput = {
     println("Enter the list of listeners (comma-separated):")
@@ -48,8 +48,8 @@ class BroadcastRangeSolution extends Solution[BroadcastRangeInput] {
   }
 }
 
-object BroadcastRangeSolution extends App {
+object DCP1789Optimized extends App {
   // Entry point for the application
-  val solution = new BroadcastRangeSolution
+  val solution = new DCP1789Optimized
   solution.execute() // Execute the solution
 }
