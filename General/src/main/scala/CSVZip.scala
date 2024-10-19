@@ -39,7 +39,7 @@ object CSVZip extends App {
   val endTime = System.nanoTime()
   val duration = (endTime - startTime) / 1e9d // convert to seconds
 
-  println(s"Time taken: $duration seconds")
+  println(s"Time taken: ${duration.toString} seconds")
 
 }
 
